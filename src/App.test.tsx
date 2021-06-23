@@ -7,5 +7,22 @@ Enzyme.configure({ adapter: new EnzymeAdapter() });
 
 test("renders non empty component", () => {
   const wrapper = shallow(<App />);
-  expect(wrapper.exists()).toBe(true)
+  const appComponent = wrapper.find('[data-test="component-app"]')
+  expect(appComponent.length).toBe(1)
 });
+
+test("renders incement button", () => {
+  
+})
+
+test("shows counter display", () => {
+  
+})
+
+test ("counter display starts at 0", () => {
+  
+})
+
+test("clicking button increments counter display" ,() => {
+  
+})

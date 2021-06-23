@@ -1,11 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import Counter from "./Counter";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-          Learn React    
+    <div data-test="component-app">
+      <h1>App</h1>
     </div>
   );
 }
